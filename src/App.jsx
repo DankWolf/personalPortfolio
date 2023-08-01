@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 import Menu from "./components/menu/Menu";
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="app">
