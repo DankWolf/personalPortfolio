@@ -46,7 +46,7 @@
         font-size: 14px;
 
         @include mobile{
-          width: 200px;
+          width: 80%;
           height: 20px;
         }
       }
@@ -57,7 +57,7 @@
         font-size: 14px;
 
         @include mobile{
-          width: 200px;
+          width: 80%;
           height: 100px;
         }
       }
