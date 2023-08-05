@@ -1,1 +1,14 @@
 $mainColor: #15023a;
+
+$primary: #fcda3f;
+
+$accent: #fc3f81;
+
+
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}){
+    @content
+  }
+}
