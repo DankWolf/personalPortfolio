@@ -45,13 +45,47 @@ function Works() {
   };
 
   return (
-    <div className="works" id="works">
+    <div className="works">
+      <h1>About Me</h1>
+      <div className="container">
+        <div className="item">
+          <div className="left">
+            <img src="assets/accentPic.png" alt="" />
+          </div>
+          <div className="right">
+            <div className="rightTech">
+                <h2>Tech Stack:</h2>
+                <p>JavaScript, TypeScript, React/Redux, SQL, NoSQL, GraphQL, Auth (OAuth, JWT, Bcrypt), TDD (Jest, Vitest, Cypress), Node.js, Express, Axios, Webpack, Vite, CI/CD (Jenkins, Travis CI, GitHub), MUI, HTML/CSS, SCSS, AWS (EC2, S3), K8s, VBA, Docker</p>
+              </div>
+              <div className="rightBio">
+                <h2>Bio:</h2>
+              <p>Full Stack & empathetic software engineer contributing to open source tools. Currently working on VaaS, a K8s visualization and diagnostics tool, designed to help devs improve resource utilization and manage expenses. Motivated, curious, and specialized in React.js, Redux.js, JavaScript, TypeScript, Node.js, Express.js, SQL/NoSQL databases.
+Previously, I was a software engineer in Innovation at Fisher Investments ($200B IRA), where I led a team using agile scrum methods to ideate and execute automation efforts across all divisions, business process mapping, and a full update to company website focused on UX and SEO.
+            </p>
+              </div>
+              <div className="rightPerson">
+                <h2>Personal:</h2>
+                <p>Son to Mexican immigrants, I've been working since I was 9 years old. Double majored alum from UC Berkeley. President of my fraternity, and lead instructor for DeCal on Leadership. Fluent in Spanish, Portuguese, Wine, and Memes. When I'm not listening to podcasts or reading, I'm running, rowing, or weight lifting. Certified Vinyasa Yoga instructor and Diploma from WSET.
+Looking for any excuse to get another cup of coffee - especially meeting new people. Feel free to reach out at chrisatenorio@gmail.com or DM me on Twitter @chrisatenorio.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Works;
+
+
+/*
+<div className="works" id="works">
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {data.map((d) => (
-          <div className="container">
+          <div className="container" key={d.id}>
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
@@ -79,7 +113,5 @@ function Works() {
         onClick={() => handleClick("right")}
       />
     </div>
-  );
-}
 
-export default Works;
+*/

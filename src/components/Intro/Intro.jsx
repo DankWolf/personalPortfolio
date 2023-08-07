@@ -36,7 +36,7 @@ function Intro() {
             <span ref={textRef}></span>
           </h3>
         </div>
-        <a href="#portfolio">
+        <a href="#works">
           <ExpandMoreIcon className="arrowIcon" />
         </a>
       </div>
