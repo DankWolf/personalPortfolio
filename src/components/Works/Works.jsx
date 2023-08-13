@@ -45,29 +45,73 @@ function Works() {
   };
 
   return (
-    <div className="works">
+    <div className="works" id="works">
       <h1>About Me</h1>
       <div className="container">
         <div className="item">
           <div className="left">
-            <img src="assets/accentPic.png" alt="" />
+            <img src="assets/head.png" alt="" />
           </div>
           <div className="right">
             <div className="rightTech">
-                <h2>Tech Stack:</h2>
-                <p>JavaScript, TypeScript, React/Redux, SQL, NoSQL, GraphQL, Auth (OAuth, JWT, Bcrypt), TDD (Jest, Vitest, Cypress), Node.js, Express, Axios, Webpack, Vite, CI/CD (Jenkins, Travis CI, GitHub), MUI, HTML/CSS, SCSS, AWS (EC2, S3), K8s, VBA, Docker</p>
+              <h2>Tech Stack:</h2>
+              <p>
+                JavaScript, TypeScript, React/Redux, SQL, NoSQL, GraphQL, Auth
+                (OAuth, JWT, Bcrypt), TDD (Jest, Vitest, Cypress), Node.js,
+                Express, Axios, Webpack, Vite, CI/CD (Jenkins, Travis CI,
+                GitHub), MUI, HTML/CSS, SCSS, AWS (EC2, S3), K8s, VBA, Docker
+              </p>
+            </div>
+            <div className="rightBio">
+              <h2>Bio:</h2>
+              <p>
+                Full Stack software engineer contributing to open source tools.
+                Currently working on VaaS, a K8s visualization and diagnostics
+                tool, designed to help devs improve resource utilization and
+                manage expenses. Previously, I was a software engineer in
+                Innovation at Fisher Investments ($200B IRA), where I mentored,
+                reviewed code, and led a team using agile scrum methods.
+              </p>
+              <a href="https://docs.google.com/document/d/1Lhbp6G6GB8S8jfXJYHt_ZW0lNFj9X8ars8obPcBQo3A/edit?usp=sharing">
+                Resume
+              </a>
+            </div>
+            <div className="rightPerson">
+              <h2>Personal:</h2>
+              <p>
+                Learning addict, community-driven creator. Software engineering
+                is the closest I can get to modern wizardry. Driven by
+                problem-solving; if I don’t know a language or technology - show
+                me the problem, share the ideal outcome - and I will find my
+                way. <br />
+              </p>
+              <br />
+              <p>
+                Fluent in Spanish, Portuguese, Wine, and Memes. When I'm not
+                listening to podcasts or reading, I'm running, rowing, or weight
+                lifting. Certified Vinyasa Yoga instructor and Diploma from
+                WSET. Let's get coffee - feel free to reach out at
+                chrisatenorio@gmail.com or DM me on Twitter @chrisatenorio.
+              </p>
+              <div className="rightAwards">
+                <a
+                  title="University of California, Berkeley; This SVG file: User:RaphaelQS, Public domain, via Wikimedia Commons"
+                  href="https://commons.wikimedia.org/wiki/File:Seal_of_University_of_California,_Berkeley.svg"
+                >
+                  <img
+                    width="512"
+                    alt="Seal of University of California, Berkeley"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Seal_of_University_of_California%2C_Berkeley.svg/512px-Seal_of_University_of_California%2C_Berkeley.svg.png"
+                  />
+                  <a
+                    href="https://www.wsetglobal.com/qualifications/wset-level-4-diploma-in-wines/"
+                    target="_blank"
+                  >
+                    <img src="https://media.licdn.com/dms/image/D4E0BAQFvzaeOhFMO4g/company-logo_200_200/0/1667324340657?e=1700092800&v=beta&t=TTkD9q8Ax4CrMmvhZF5wKFuwkcIu0nFv9rc5Fz-JKGg" />
+                  </a>
+                </a>
               </div>
-              <div className="rightBio">
-                <h2>Bio:</h2>
-              <p>Full Stack & empathetic software engineer contributing to open source tools. Currently working on VaaS, a K8s visualization and diagnostics tool, designed to help devs improve resource utilization and manage expenses. Motivated, curious, and specialized in React.js, Redux.js, JavaScript, TypeScript, Node.js, Express.js, SQL/NoSQL databases.
-Previously, I was a software engineer in Innovation at Fisher Investments ($200B IRA), where I led a team using agile scrum methods to ideate and execute automation efforts across all divisions, business process mapping, and a full update to company website focused on UX and SEO.
-            </p>
-              </div>
-              <div className="rightPerson">
-                <h2>Personal:</h2>
-                <p>Son to Mexican immigrants, I've been working since I was 9 years old. Double majored alum from UC Berkeley. President of my fraternity, and lead instructor for DeCal on Leadership. Fluent in Spanish, Portuguese, Wine, and Memes. When I'm not listening to podcasts or reading, I'm running, rowing, or weight lifting. Certified Vinyasa Yoga instructor and Diploma from WSET.
-Looking for any excuse to get another cup of coffee - especially meeting new people. Feel free to reach out at chrisatenorio@gmail.com or DM me on Twitter @chrisatenorio.</p>
-              </div>
+            </div>
           </div>
         </div>
       </div>

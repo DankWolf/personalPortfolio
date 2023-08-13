@@ -8,7 +8,7 @@ export default function TopBar({ menuOpen, setMenuOpen }) {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            Tenorio.
+            Tenorio
           </a>
           <div className="itemContainer">
             <PersonIcon className="icon" />
@@ -17,6 +17,15 @@ export default function TopBar({ menuOpen, setMenuOpen }) {
           <div className="itemContainer">
             <MailIcon className="icon" />
             <span>chrisatenorio@gmail.com</span>
+          </div>
+          <div className="itemContainer">
+            <span>
+              resume
+              <a
+                target="_blank"
+                href="https://docs.google.com/document/d/1Lhbp6G6GB8S8jfXJYHt_ZW0lNFj9X8ars8obPcBQo3A/edit?usp=sharing"
+              ></a>
+            </span>
           </div>
         </div>
         <div className="right">

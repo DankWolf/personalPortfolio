@@ -11,7 +11,7 @@ function Menu({ menuOpen, setMenuOpen }) {
           <a href="#works">About Me</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="#portofolio">Portfolio</a>
+          <a href="#portfolio">Portfolio</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
           <a href="#testimonials">Testimonials</a>

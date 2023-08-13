@@ -1,14 +1,23 @@
-$mainColor: #15023a;
+$mainColor: #5c0913;
+
+$filler: #f6efe0;
 
 $primary: #fcda3f;
 
 $accent: #fc3f81;
 
 
-$width: 768px;
+$mobWidth: 480px;
+$tabWidth: 768px;
+
+@mixin tablet {
+  @media (max-width: #{$tabWidth}){
+    @content
+  }
+}
 
 @mixin mobile {
-  @media (max-width: #{$width}){
+  @media (max-width: #{$mobWidth}){
     @content
   }
 }

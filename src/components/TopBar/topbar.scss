@@ -46,6 +46,12 @@
           font-size: 15px;
           font-weight: 400;
         }
+        a{
+          text-decoration: none;
+          font-size: 17px;
+          margin-right: 5px;
+          // color: $mainColor;
+        }
       }
     }
     
@@ -70,20 +76,22 @@
   }
   &.active{
     background-color: $mainColor;
-    color: white;
+    color: $filler;
+
+    
 
     .hamburger{
 
       span{
           &:first-child{
-            background-color: white;
+            background-color: $filler;
             transform: rotate(45deg);
           }
           &:nth-child(2){
             opacity: 0;
           }
           &:last-child{
-            background-color: white;
+            background-color: $filler;
             transform: rotate(-45deg);
           }
       }

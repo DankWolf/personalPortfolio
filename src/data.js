@@ -4,31 +4,31 @@ export const featuredPortfolio = [
     title: "Social Media App",
     img: "https://cdn.dribbble.com/userupload/8976763/file/original-6da7af143795aaa67112b94eb33387d7.png?resize=400x300&vertical=center",
   },
-  {
-    id: 2,
-    title: "Rampa UI Design",
-    img: "https://cdn.dribbble.com/userupload/7831744/file/original-fc2ee7e2d8c4853a0211c022d5a7e1b2.png?resize=400x300&vertical=center",
-  },
-  {
-    id: 3,
-    title: "E-commerce Web Design",
-    img: "https://cdn.dribbble.com/userupload/8970276/file/original-05bdbf9b7f24f1c898ebfd86ceb75a4c.jpg?crop=0x0-4800x3600&resize=400x300&vertical=center",
-  },
-  {
-    id: 4,
-    title: "Social Media App",
-    img: "https://cdn.dribbble.com/userupload/8982055/file/original-b8990237420ad923bfc846ce3130758d.png?resize=400x300&vertical=center",
-  },
-  {
-    id: 5,
-    title: "Hero Web Design",
-    img: "https://cdn.dribbble.com/userupload/8989077/file/original-dc17a8dfd961a581abcf7481957ec36a.png?crop=0x1021-5761x5342&resize=400x300&vertical=center",
-  },
-  {
-    id: 6,
-    title: "Banking App",
-    img: "https://cdn.dribbble.com/userupload/8979199/file/original-853f2657869a4fbeae7ffdb43472165f.png?resize=400x300&vertical=center",
-  },
+  // {
+  //   id: 2,
+  //   title: "Rampa UI Design",
+  //   img: "https://cdn.dribbble.com/userupload/7831744/file/original-fc2ee7e2d8c4853a0211c022d5a7e1b2.png?resize=400x300&vertical=center",
+  // },
+  // {
+  //   id: 3,
+  //   title: "E-commerce Web Design",
+  //   img: "https://cdn.dribbble.com/userupload/8970276/file/original-05bdbf9b7f24f1c898ebfd86ceb75a4c.jpg?crop=0x0-4800x3600&resize=400x300&vertical=center",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Social Media App",
+  //   img: "https://cdn.dribbble.com/userupload/8982055/file/original-b8990237420ad923bfc846ce3130758d.png?resize=400x300&vertical=center",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Hero Web Design",
+  //   img: "https://cdn.dribbble.com/userupload/8989077/file/original-dc17a8dfd961a581abcf7481957ec36a.png?crop=0x1021-5761x5342&resize=400x300&vertical=center",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Banking App",
+  //   img: "https://cdn.dribbble.com/userupload/8979199/file/original-853f2657869a4fbeae7ffdb43472165f.png?resize=400x300&vertical=center",
+  // },
 ];
 
 export const webPortfolio = [
