@@ -20,19 +20,19 @@ function Portfolio() {
     },
     {
       id: "web",
-      title: "Web App",
+      title: "Personal Projects",
     },
     {
       id: "mobile",
-      title: "Mobile App",
+      title: "Full Stack Practice",
     },
     {
       id: "design",
-      title: "Design",
+      title: "Design Practice",
     },
     {
       id: "content",
-      title: "Content",
+      title: "IRL",
     },
   ];
 
@@ -73,12 +73,29 @@ function Portfolio() {
         ))}
       </ul>
       <div className="container">
-        {data.map((d) => (
-          <div className="item">
-            <img src={d.img} alt="" />
-            <h3>{d.title}</h3>
-          </div>
-        ))}
+        {selected === "design" || selected === "content"
+          ? data.map((d) => (
+              <div className="project" key="{d.id}">
+                <div className="item">
+                  <img src={d.img} alt="" />
+                  <h3>{d.title}</h3>
+                </div>
+              </div>
+            ))
+          : data.map((d) => (
+              <div className="project" key="{d.id}">
+                <div className="item">
+                  <img src={d.img} alt="" />
+                  <h3>{d.title}</h3>
+                </div>
+                <h3>Tech Stack</h3>
+                <p>{d.stack}</p>
+                <h3>Problem</h3>
+                <p>{d.prob}</p>
+                <h3>Solution</h3>
+                <p>{d.solution}</p>
+              </div>
+            ))}
       </div>
     </div>
   );

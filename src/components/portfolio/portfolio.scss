@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .portfolio{
-  background-color: white;
+  background-color: $filler;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,10 +36,14 @@
     @include mobile{
       width: 100%;
     }
+    .project{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
     .item{
-      width: 220px;
-      height: 150px;
+      width: 440px;
+      height: 300px;
       border-radius: 20px;
       border: 1px solid lightgrey;
       margin: 10px 20px;
@@ -60,6 +64,8 @@
       h3{
         position: absolute;
         font-size: 20px;
+        align-items: center;
+        text-decoration: none;
       }
 
       img{
@@ -76,5 +82,16 @@
         }
       }
     }
+    h3{
+      text-decoration: underline;
+      align-self: baseline;
+    }
+    p{
+      width: 500px;
+      font-size: 15px;
+      text-align: justify;
+      padding-bottom: 5px;
+    }
+  }
   }
 }

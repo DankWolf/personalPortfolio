@@ -1,8 +1,14 @@
 export const featuredPortfolio = [
   {
     id: 1,
-    title: "Social Media App",
-    img: "https://cdn.dribbble.com/userupload/8976763/file/original-6da7af143795aaa67112b94eb33387d7.png?resize=400x300&vertical=center",
+    title: "VaaS",
+    img: "https://miro.medium.com/v2/resize:fit:720/0*FTvo6JAVT73-vlUC",
+    link: "https://www.vaas.dev/",
+    prob: "K8s is powerful, but complex. This can pose a challenge in optimizing functions and troubleshooting. A lack of standardization in cloud costs can result in vendor lock-in. This is further exacerbated by a disconnect between technical and financial teams, leading to inadequate future planning",
+    stack:
+      "TypeScript, React, Redux, Node.js, Mongodb, Express.js, Vite, K8, Docker, Prometheus, Grafana, Chart.js Cypress, Vitest",
+    solution:
+      "We developed a centralized dashboard to monitor key metrics across multiple clusters. We included a real-time cost calculator, and cost projector to help organizations make informed financial decisions. Launched on Docker, teams can run it locally and have full access while protecting data & privacy",
   },
   // {
   //   id: 2,
