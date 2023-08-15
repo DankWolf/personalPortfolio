@@ -11,29 +11,35 @@ function Contact() {
     setMessage(true);
   };
 
-  return (
-    <div className="contact" id="contact">
-      <div className="left">
-        <img src="assets/contact.svg" alt="" />
-      </div>
-      <div className="right">
-        <h2>Contact.</h2>
-        <form action="mailto:chrisatenorio@gmail.com" onSubmit={handleSubmit}>
-          <input
-            onChange={(e) => setEmail(e.target.value)}
-            type="text"
-            placeholder="Email"
-          />
-          <textarea
-            onChange={(e) => setText(e.target.value)}
-            placeholder="Message"
-          ></textarea>
-          <button type="submit">Send</button>
-          {message && <span>Thank you, I will respond ASAP :)</span>}
-        </form>
-      </div>
+const myEmail = "chrisatenorio@gmail.com";
+
+return (
+  <div className="contact" id="contact">
+    <div className="left">
+      <img src="assets/contact.svg" alt="" />
     </div>
-  );
+    <div className="right">
+      <h2>Contact.</h2>
+      <form onSubmit={handleSubmit}>
+        <input
+          onChange={(e) => setEmail(e.target.value)}
+          type="text"
+          placeholder="Subject"
+        />
+        <textarea
+          onChange={(e) => setText(e.target.value)}
+          placeholder="Message"
+        ></textarea>
+        <a href={`mailto:${myEmail}?subject=${email}&body=${text}`}>
+          <button type="submit" onClick={handleSubmit}>
+            Send
+          </button>
+        </a>
+        {message && <span>Thank you, I will respond ASAP :)</span>}
+      </form>
+    </div>
+  </div>
+);
 }
 
 export default Contact;
