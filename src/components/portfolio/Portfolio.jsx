@@ -88,11 +88,11 @@ function Portfolio() {
                   <img src={d.img} alt="" />
                   <h3>{d.title}</h3>
                 </div>
-                <h3>Tech Stack</h3>
+                <h4>Tech Stack</h4>
                 <p>{d.stack}</p>
-                <h3>Problem</h3>
+                <h4>Problem</h4>
                 <p>{d.prob}</p>
-                <h3>Solution</h3>
+                <h4>Solution</h4>
                 <p>{d.solution}</p>
               </div>
             ))}
