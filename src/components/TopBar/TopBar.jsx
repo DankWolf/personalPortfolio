@@ -13,6 +13,9 @@ export default function TopBar({ menuOpen, setMenuOpen }) {
           <div className="itemContainer">
             <PersonIcon className="icon" />
             <span>858-539-5450</span>
+            <div className="dropdown">
+              <p>858-539-5450</p>
+            </div>
           </div>
           <div className="itemContainer">
             <MailIcon className="icon" />
@@ -20,11 +23,12 @@ export default function TopBar({ menuOpen, setMenuOpen }) {
           </div>
           <div className="itemContainer">
             <span>
-              resume
               <a
                 target="_blank"
                 href="https://docs.google.com/document/d/1Lhbp6G6GB8S8jfXJYHt_ZW0lNFj9X8ars8obPcBQo3A/edit?usp=sharing"
-              ></a>
+              >
+                resume
+              </a>
             </span>
           </div>
         </div>

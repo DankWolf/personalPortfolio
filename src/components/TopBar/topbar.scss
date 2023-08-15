@@ -26,25 +26,54 @@
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
+
+        @include mobile{
+          font-size: 30px;
+          margin-right: 20px;
+        }
       }
 
       .itemContainer{
         display: flex;
         align-items: center;
         margin-left: 30px;
+        position: relative;
+        display: inline-block;
 
-        @include mobile{
+        // @include mobile{
+        //   &:hover{
+        //     .dropdown{
+        //       display: block;
+        //     }
+        //   }
+        // }
+
+        .dropdown{
           display: none;
+          position: absolute;
+          min-width: 160px;
+          background-color: #f9f9f9;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          padding: 12px 16px;
+          z-index: 50;
         }
 
         .icon{
           font-size: 18px;
           margin-right: 5px;
+
+          @include mobile{
+            display: none;
+          }
         }
         
         span{
           font-size: 15px;
           font-weight: 400;
+
+          @include mobile{
+            display: none;
+          }
         }
         a{
           text-decoration: none;
@@ -54,6 +83,8 @@
         }
       }
     }
+
+    
     
     .right{
         .hamburger{
