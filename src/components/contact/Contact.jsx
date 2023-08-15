@@ -3,6 +3,8 @@ import { useState } from "react";
 
 function Contact() {
   const [message, setMessage] = useState(false);
+  const [email, setEmail] = useState("");
+  const [text, setText] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,9 +18,16 @@ function Contact() {
       </div>
       <div className="right">
         <h2>Contact.</h2>
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Email" />
-          <textarea placeholder="Message"></textarea>
+        <form action="mailto:chrisatenorio@gmail.com" onSubmit={handleSubmit}>
+          <input
+            onChange={(e) => setEmail(e.target.value)}
+            type="text"
+            placeholder="Email"
+          />
+          <textarea
+            onChange={(e) => setText(e.target.value)}
+            placeholder="Message"
+          ></textarea>
           <button type="submit">Send</button>
           {message && <span>Thank you, I will respond ASAP :)</span>}
         </form>
