@@ -3,6 +3,7 @@
 .contact{
   background-color: white;
   display: flex;
+  overflow: hidden;
 
   @include mobile{
     flex-direction: column;
@@ -11,14 +12,23 @@
   .left{
     flex: 1;
     overflow: hidden;
+    align-self: center;
 
     @include mobile{
-      align-self: center;
+     width: 100%;
+      margin-top: 50px;
     }
 
     img{
-      height: 100%;
+      max-width: 100%;
+      height: auto;
+      aspect-ratio: attr(width) / attr(height);
+      object-fit: contain;
 
+      @include mobile{
+       width: 95%;
+       height: 95%;
+      }
     }
   }
   .right{
@@ -34,30 +44,38 @@
 
     form{
       width: 70%;
-      height: 70%;
+      height: 50%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
 
+      @include tablet{
+        height: 50%;
+      }
+
+      @include mobile{
+        height: 70%;
+      }
+
       input{
-        width: 300px;
+        width: 95%;
         height: 30px;
         font-size: 14px;
 
         @include mobile{
-          width: 80%;
+          width: 95%;
           height: 20px;
         }
       }
 
       textarea{
-        width: 300px;
+        width: 95%;
         height: 200px;
         font-size: 14px;
 
         @include mobile{
-          width: 80%;
+          width: 95%;
           height: 100px;
         }
       }
